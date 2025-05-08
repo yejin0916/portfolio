@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");\
+
 body {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -696,10 +697,12 @@ a {
 .portfolio-item, .blog-item {
   display: block;
   overflow: hidden;
-  position: relative; }
+  position: relative; 
+  z-index: 9 !important;
+}
   .portfolio-item .overlay, .blog-item .overlay {
     position: relative;
-    z-index: 8;
+    /* z-index: 8; */
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .3s all ease;
