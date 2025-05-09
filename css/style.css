@@ -1443,7 +1443,7 @@ span.error {
         letter-spacing: .1rem; }
         .comment-list li .comment-body .reply:hover {
           color: #fff;
-          background: #fcf946; }
+          background: #dddddd; }
 
 .categories_tags {
   font-weight: bold; }
