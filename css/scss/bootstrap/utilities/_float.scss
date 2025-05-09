@@ -1,11 +1,11 @@
-// stylelint-disable declaration-no-important
+//
+// Screenreaders
+//
 
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+.sr-only {
+  @include sr-only();
+}
 
-    .float#{$infix}-left  { float: left !important; }
-    .float#{$infix}-right { float: right !important; }
-    .float#{$infix}-none  { float: none !important; }
-  }
+.sr-only-focusable {
+  @include sr-only-focusable();
 }
